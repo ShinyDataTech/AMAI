@@ -43,3 +43,6 @@ data/audit_export.json
 *.swo
 .DS_Store
 Thumbs.db
+
+# ndemo temp frames and profile
+.ndemo/

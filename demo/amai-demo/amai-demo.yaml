@@ -1,0 +1,120 @@
+titleCard:
+  title: "Adaptive Micro-Assembly Inspector (AMAI)"
+  subtitle: "Intel OpenVINO™ Edge Vision & Speechmatics Voice Supervised Robotics"
+  duration: 3500
+app:
+  url: "http://localhost:8501"
+  viewport:
+    width: 1920
+    height: 1080
+  scale: 1.5
+  zoom: 1
+  colorScheme: "dark"
+  setup: []
+tts:
+  provider: "edge"
+  voice: "en-US-AndrewNeural"
+  speed: 1.05
+recording:
+  outputDir: "."
+  fps: 30
+segments:
+  - id: "intro"
+    narration: "Welcome to AMAI, the Adaptive Micro-Assembly Inspector. AMAI is a Physical AI quality assurance and robotic sorting system built for high-precision electronics manufacturing."
+    intent: "show the AMAI dashboard and telemetry HUD"
+    actions:
+      - type: "wait"
+        duration: 3000
+    timing: "after"
+    audioDuration: 11664
+    videoDuration: 14690
+  - id: "solder-bridge"
+    narration: "Let's inspect a micro-assembly unit. We trigger an inspection of a circuit board with an injected solder bridge defect."
+    intent: "click the solder bridge button"
+    actions:
+      - type: "click"
+        target:
+          selector: "button:has-text(\"Solder Bridge\")"
+        done:
+          stable: 600
+      - type: "wait"
+        duration: 2500
+    timing: "after"
+    audioDuration: 6816
+    videoDuration: 11110
+  - id: "openvino-perception"
+    narration: "Intel OpenVINO executes deep defect detection in just 0.24 milliseconds. The system computes the 2D bounding box and projects it into 3D Cartesian coordinates to plan a collision-free grasp."
+    intent: "examine OpenVINO latency and 3D coordinates"
+    actions:
+      - type: "hover"
+        target:
+          selector: "button:has-text(\"Component Skew\")"
+      - type: "wait"
+        duration: 2500
+    timing: "after"
+    audioDuration: 14112
+    videoDuration: 17088
+  - id: "depth-field"
+    narration: "Switching to the calibrated depth field, our overhead depth map verifies sub-millimeter clearance heights and protects sensitive silicon."
+    intent: "switch to depth view"
+    actions:
+      - type: "click"
+        target:
+          selector: "label:has-text(\"Linearized Depth Field\")"
+        done:
+          stable: 600
+      - type: "wait"
+        duration: 3000
+    timing: "after"
+    audioDuration: 8712
+    videoDuration: 13342
+  - id: "pristine-pass"
+    narration: "Now let's test a nominal board. We switch back to the perception view and inspect a pristine pass unit."
+    intent: "return to perception and click pristine pass"
+    actions:
+      - type: "click"
+        target:
+          selector: "label:has-text(\"Annotated Perception HUD\")"
+        done:
+          stable: 600
+      - type: "click"
+        target:
+          selector: "button:has-text(\"Pristine Pass\")"
+        done:
+          stable: 600
+      - type: "wait"
+        duration: 2500
+    timing: "after"
+    audioDuration: 5976
+    videoDuration: 11944
+  - id: "voice-override"
+    narration: "With Speechmatics streaming voice oversight, operators on the factory floor can supervise hands-free. Watch as we trigger a voice override to approve a unit to assembly."
+    intent: "trigger voice override button"
+    actions:
+      - type: "click"
+        target:
+          selector: "button:has-text(\"Override Reject\")"
+        done:
+          stable: 600
+      - type: "wait"
+        duration: 3000
+    timing: "after"
+    audioDuration: 10536
+    videoDuration: 15383
+  - id: "audit-trail"
+    narration: "Every inspection result, 3D coordinate, and operator voice transcript is logged to an immutable SQLite audit trail for full ISO traceability. AMAI brings real-time Physical AI to modern manufacturing."
+    intent: "scroll to audit table and export json"
+    actions:
+      - type: "scroll"
+        target:
+          selector: "button:has-text(\"Export Audit JSON\")"
+      - type: "click"
+        target:
+          selector: "button:has-text(\"Export Audit JSON\")"
+        done:
+          stable: 600
+      - type: "wait"
+        duration: 3000
+    timing: "after"
+    audioDuration: 14376
+    videoDuration: 19027

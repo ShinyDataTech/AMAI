@@ -1,0 +1,83 @@
+1
+00:00:05,679 --> 00:00:09,409
+Welcome to AMAI, the Adaptive Micro-Assembly Inspector.
+
+2
+00:00:09,409 --> 00:00:14,563
+AMAI is a Physical AI quality assurance and robotic sorting system built for
+
+3
+00:00:14,563 --> 00:00:17,343
+high-precision electronics manufacturing.
+
+4
+00:00:20,369 --> 00:00:22,466
+Let's inspect a micro-assembly unit.
+
+5
+00:00:22,466 --> 00:00:26,777
+We trigger an inspection of a circuit board with an injected solder bridge
+
+6
+00:00:26,777 --> 00:00:27,185
+defect.
+
+7
+00:00:31,479 --> 00:00:33,190
+24 milliseconds.
+
+8
+00:00:33,190 --> 00:00:40,994
+The system computes the 2D bounding box and projects it into 3D Cartesian
+
+9
+00:00:40,994 --> 00:00:45,591
+coordinates to plan a collision-free grasp.
+
+10
+00:00:48,567 --> 00:00:51,103
+Switching to the calibrated depth field
+
+11
+00:00:51,103 --> 00:00:56,109
+our overhead depth map verifies sub-millimeter clearance heights and protects
+
+12
+00:00:56,109 --> 00:00:57,279
+sensitive silicon.
+
+13
+00:01:01,909 --> 00:01:03,725
+Now let's test a nominal board.
+
+14
+00:01:03,725 --> 00:01:07,885
+We switch back to the perception view and inspect a pristine pass unit.
+
+15
+00:01:13,853 --> 00:01:16,582
+With Speechmatics streaming voice oversight
+
+16
+00:01:16,582 --> 00:01:20,137
+operators on the factory floor can supervise hands-free.
+
+17
+00:01:20,137 --> 00:01:24,389
+Watch as we trigger a voice override to approve a unit to assembly.
+
+18
+00:01:29,236 --> 00:01:32,023
+Every inspection result, 3D coordinate
+
+19
+00:01:32,023 --> 00:01:37,744
+and operator voice transcript is logged to an immutable SQLite audit trail for
+
+20
+00:01:37,744 --> 00:01:39,358
+full ISO traceability.
+
+21
+00:01:39,358 --> 00:01:43,612
+AMAI brings real-time Physical AI to modern manufacturing.
