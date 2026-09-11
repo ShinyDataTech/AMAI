@@ -1,0 +1,23 @@
+# Core Simulation and Robotics
+pybullet>=3.2.6
+
+# Edge AI Acceleration
+openvino>=2024.0.0
+
+# Speech Recognition & Voice Control
+speechmatics-python>=1.6.0
+
+# Vision & Numerical Processing
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.11.0
+pillow>=10.0.0
+
+# Dashboard & Interactive Telemetry
+streamlit>=1.30.0
+
+# Data Validation & Utilities
+pydantic>=2.5.0
+
+# Automated Testing
+pytest>=7.4.0

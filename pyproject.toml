@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amai-inspector"
+version = "1.0.0"
+description = "Adaptive Micro-Assembly Inspector (AMAI) - Physical AI Quality Assurance and Robotic Sorting System"
+authors = [{ name = "AMAI Team" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pybullet>=3.2.6",
+    "openvino>=2024.0.0",
+    "speechmatics-python>=1.6.0",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0",
+    "pillow>=10.0.0",
+    "streamlit>=1.30.0",
+    "pydantic>=2.5.0",
+    "pytest>=7.4.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
