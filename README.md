@@ -183,12 +183,6 @@ AI-Infra-Summit-Hackathon/
 └── assets/                          # Generated URDF models & OpenVINO IR artifacts
 ```
 
----
-
-## 📜 Submission Collateral Links
-- **[Submission Metadata](docs/SUBMISSION_METADATA.md):** Hackathon registration details, challenge tracking, and performance metrics.
-- **[6-Slide Presentation Deck](docs/SLIDES_OUTLINE.md):** Complete slide outline and talking points for judges.
-- **[3-Minute Video Demo Script](docs/VIDEO_SCRIPT.md):** Word-for-word timed demonstration script with visual cues.
 
 ---
 
